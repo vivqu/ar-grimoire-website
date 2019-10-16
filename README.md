@@ -1,4 +1,4 @@
-# World Animals Website
+# AR Grimorie Website
 
 ## Credits
 - [Jekyll](https://github.com/jekyll/jekyll)
