@@ -1,13 +1,13 @@
 .imageWrapper {					// Sets the background image in the header area
-	height: 494px;
-	background: radial-gradient(1000px circle at 80% -20%, #2AF598, #08AEEA 80%, #08AEEA 95%);
+	height: 730px;
+	background: #2577DC;//radial-gradient(1000px circle at 80% -20%, #2AF598, #08AEEA 80%, #08AEEA 95%);
 	background-position: top;
 	border-radius: 0px;
 }
 
 .imageWrapperShort {					// Sets the background image in the header area
 	height: 115px;
-	background: radial-gradient(1000px circle at 80% -20%, #2AF598, #08AEEA 80%, #08AEEA 95%);
+	background: #2577DC;// radial-gradient(1000px circle at 80% -20%, #2AF598, #08AEEA 80%, #08AEEA 95%);
 	background-position: top;
 	border-radius: 0px;
 }
@@ -28,8 +28,8 @@
 	grid-column-gap: 30px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
-		"p p p i i i i i i i i i"
-		"p p p c c c c c c c c c"
+		"i i i i i p p p p p p p"
+		"i i i i i p p p p p p p"
 }
 
 .containerPrivacyPolicy {	
@@ -114,7 +114,7 @@ p.privacyPolicyFooter {
 		grid-template-rows: 115px 526px auto auto;
 		grid-template-areas: 
 		"h h h h h h h h h h h h"
-		"p p p i i i i i i i i i"
+		"i i i i i i i p p p p p"
 		"c c c c c c c c c c c c"
 	}
 
@@ -259,7 +259,7 @@ a.dropdown-item {
 } 
 
 .headerIcon {
-	width: 50px;
+	width: 43px;
 	height: 50px;
 	margin-right: 15px;
 }
@@ -311,6 +311,7 @@ a.dropdown-item {
 	flex-direction: column;
 	align-items: start;
 	justify-content: center;
+	margin-top: 80px;
 }
 
 .appHeadline {
@@ -338,28 +339,6 @@ a.dropdown-item {
 	
 	.appPrice {
 		margin-top: 13px;
-		text-align: center;
-	}
-	
-} 
-
-.appDescriptionContainer {
-	font-size: 2.5rem;
-	font-weight: normal;
-	width: 100%;
-	align-items: flex-start;
-	margin-top: 20px;
-	flex: 0 1 auto;
-	line-height: 1.5;
-}
-
-.appDescription {
-	color: $app-description-color;
-}
-
-@media only screen and (max-width: 992px) {
-
-	.appDescription {
 		text-align: center;
 	}
 	
@@ -414,19 +393,11 @@ a.dropdown-item {
 .iphonePreview {
 	grid-area: p;
 	background-image: url($device-frame);
-	background-size: 230px auto;
+	background-size: 600px auto;
 	background-repeat: no-repeat;
-	margin-top: 68px;
+	margin-top: 20px;
 	position: relative;
-}
-
-.iphoneScreen {
-	width: 200px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 16px;
-	margin-top: 14px;
-	cursor: pointer;
+	float: right;
 }
 
 .handTapContainer {
