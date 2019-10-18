@@ -1,23 +1,5 @@
 <footer>
-
-	<div class="footerLogo">
-		<img class="footerAppIcon" src="{{ site.app_icon }}">
-	</div>
-	<div class="footerText">
-		<h3>{{ site.t[page.lang].footer_promo }}</h3>
-	</div>
-	<div class="footerButtonsContainer"">
-		<div class=" footerButtons">
-		<a class="appStoreLink" href="{{page.app_store_link}}" target="_blank"><img class="footerAppStore"
-				src="/assets/localized-img/appstore-{{ page.lang }}.png"></a>
-		{% if site.play_store_link %}
-		<a class="playStoreLink" href="{{site.play_store_link}}"><img class="footerPlayStore"
-				src="/assets/localized-img/playstore-{{ page.lang }}.png"></a>
-		{% endif %}
-	</div>
-	</div>
 	<div class="footerIcons">
-
 		{% if site.twitter_username %}
 		<a href="https://twitter.com/{{ site.twitter_username }}">
 			<span class="fa-stack fa-1x">
@@ -26,7 +8,6 @@
 			</span>
 		</a>
 		{% endif %}
-
 		{% if site.github_username %}
 		<a href="https://github.com/{{ site.github_username }}">
 			<span class="fa-stack fa-1x">
@@ -47,9 +28,11 @@
 
 	</div>
 	{% include footernavigation.html %}
-	<div style="width: 100%">
-		<hr class="footerDivider" />
+	<div class="footerBottomContainer">
+		<div style="width: 100%">
+			<hr class="footerDivider" />
+		</div>
+		<p class="footerText copyrightText">All rights reserved. © {% if site.your_link %}<a
+				href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}, 2019</p>
 	</div>
-	<p class="footerText copyrightText">All rights reserved. © {% if site.your_link %}<a
-			href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}, 2019</p>
 </footer>

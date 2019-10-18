@@ -27,15 +27,9 @@
             {% include feature-characters.html %}
             {% include feature-keywords.html %}
             {% include feature-sphere.html %}
-            <div class="container container-bottom">
-                {% include download-banner.html %}
-                {% include footer.html %}
-            </div>
+            {% include download-banner.html %}
+            {% include footer.html %}
         </div>
     </div>
 </body>
-<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
-<script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
-<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-<script src="/assets/js/bounceHand.js"></script>
 </html>

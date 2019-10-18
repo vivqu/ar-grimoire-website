@@ -117,12 +117,11 @@ p.privacyPolicyFooter {
 }
 
 .container-bottom {
-	margin-top: 50px;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	grid-template-areas: 
-		"l l l l l l l l l l l l"
-		"f f f f f f f f f f f f"
+		"l l l l l l f f f f f f"
+		"g g g g g g g g g g g g"
 }
 
 @media only screen and (max-width: 1070px) {
@@ -161,8 +160,8 @@ p.privacyPolicyFooter {
 		grid-template-columns: auto;
 		grid-template-rows: auto;
 		grid-template-areas: 
-			"l l l l l l l l l l l l"
-			"f f f f f f f f f f f f"
+			"l l l l l l f f f f f f"
+			"g g g g g g g g g g g g"
 	}
 }
 
@@ -207,8 +206,8 @@ p.privacyPolicyFooter {
 		grid-template-columns: 1;
 		grid-template-rows: auto;
 		grid-template-areas: 
-			"l l l l l l l l l l l l"
-			"f f f f f f f f f f f f"
+			"l l l l l l f f f f f f"
+			"g g g g g g g g g g g g"
 	}
 }
 
@@ -629,31 +628,48 @@ a.dropdown-item {
 
 .downloadContainer {
 	width: 100%;
-	height: 370px;
+	height: 420px;
 	background-color: #7E1D7E;
+}
+
+.downloadTextContainer {
+	display: block;
+	line-height: 1.5;
+	width: 100%;
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 10px;
+}
+.downloadText {
+	color: #ffff;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+.centeredButtonsContainer {
+	margin-top: 12px;
+	width: 100%;
+	padding-bottom: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 // Footer
 footer {
-	grid-area: f;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-}
-
-.footerAppIcon {
-	width: 70px;
-	height: 70px;
-}
-
-.footerLogo {
-	margin-top: 25px;
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	height: 115px;
+	display: grid;
+	margin: auto;
+	max-width: $content-width;
+	padding-left: 15px;
+	padding-right: 15px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 115px 376px auto;
+	grid-column-gap: 30px;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"l l l l l l f f f f f f"
+		"g g g g g g g g g g g g"
 }
 
 .footerText {
@@ -667,43 +683,34 @@ footer {
 }
 
 .footerIcons {
+	grid-area: l;
+	padding-top: 40px;
 	padding-bottom: 30px;
 	display: flex;
-}
-
-.footerButtonsContainer {
-	margin-top: 12px;
-	width: 100%;
-	padding-bottom: 70px;
-}
-
-.footerButtons {
-	filter: $drop-shadow;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
-.footerPlayStore {
-	height: 45px;
-}
-
-.footerAppStore {
-	margin-right: 12px;
-	height: 45px;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 .footerLinksContainer {
+	grid-area: f;
+	width: 100%;
+	padding-top: 40px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.footerBottomContainer {
+	grid-area: g;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
 }
 
 .footerLinksContainer > p {
 	font-size: 0.8em;
 	color: $footer-text-color;
-	text-align: center;
+	text-align: right;
 }
 
 .footerLinksContainer > p > a {
