@@ -98,15 +98,20 @@ p.privacyPolicyFooter {
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 115px 376px auto;
 	grid-column-gap: 30px;
-	// grid-template-columns: auto;
-	// grid-template-rows: auto;
-	
 }
 
 .container-features-right {
 	grid-template-areas: 
 	"s s s s s d d d d d d d"
 	"s s s s s d d d d d d d"
+	"r r r r r r r r r r r r"
+	"q q q q q q q q q q q q"
+}
+
+.container-features-left {
+	grid-template-areas: 
+	"d d d d d d d s s s s s"
+	"d d d d d d d s s s s s "
 	"r r r r r r r r r r r r"
 	"q q q q q q q q q q q q"
 }
@@ -143,6 +148,14 @@ p.privacyPolicyFooter {
 			"q q q q q q q q q q q q"
 	}
 
+	.container-features-left {
+		grid-template-areas: 
+			"d d d d d d s s s s s s"
+			"r r r r r r r r r r r r"
+			"s s s s s s s s s s s s"
+			"q q q q q q q q q q q q"
+	}
+
 	.container-bottom {
 		margin-top: 50px;
 		grid-template-columns: auto;
@@ -174,6 +187,14 @@ p.privacyPolicyFooter {
 		grid-template-rows: auto;
 	} 
 	container-features-right {
+		grid-template-areas: 
+			"d d d d d d d d d d d d"
+			"r r r r r r r r r r r r"
+			"s s s s s s s s s s s s"
+			"q q q q q q q q q q q q"
+	}
+
+	container-features-left {
 		grid-template-areas: 
 			"d d d d d d d d d d d d"
 			"r r r r r r r r r r r r"
@@ -518,8 +539,7 @@ a.dropdown-item {
 
 // Features
 .features {
-	margin-top: 5em;
-	background: #F5F5F5;
+	background: #F8F8F8;
 }
 
 .featureTextContainer {
