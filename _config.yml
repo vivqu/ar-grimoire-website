@@ -23,37 +23,6 @@ twitter_username                          : vivqu
 github_username                           : vivqu
 youtube_username                          :
 
-
-
-# Feature List                            Edit, add or remove features to be presented.
-features                                  :
-
-  - title                                 : language_feature_title 
-    description                           : language_feature_description 
-    fontawesome_icon_name                 : language
-
-  - title                                 : answer_feature_title
-    description                           : answer_feature_description
-    fontawesome_icon_name                 : volume-up
-
-  - title                                 : kids_feature_title
-    description                           : kids_feature_description
-    fontawesome_icon_name                 : baby
-
-
-# Image List
-illustrations                             :
-  - icon                                  : /assets/illustrations/lion-head.png
-    animalName                            : lion
-  - icon                                  : /assets/illustrations/cow-head.png
-    animalName                            : cow
-  - icon                                  : /assets/illustrations/sheep-head.png
-    animalName                            : sheep
-  - icon                                  : /assets/illustrations/pig-head.png
-    animalName                            : pig
-  - icon                                  : /assets/illustrations/duck-head.png
-    animalName                            : duck
-
 # Theme Settings
 header_title_color                        : "#ffffff"
 body_background_color                     : "#ffffff"
@@ -75,41 +44,6 @@ social_icons_foreground_color             : "#ffff"
 social_icons_background_color             : "#2577DC"
 
 footer_text_color                         : "#2577DC"
-
-####################################################
-###                 Translations                 ###
-####################################################
-
-
-t:
-  en:
-    app_headline: In English, the frog says "ribbit"...
-    app_description: What does it say in other languages?
-    language_feature_title: Supports 11 different languages
-    language_feature_description: Customize which languages are used for the animal questions.
-    answer_feature_title: Hear answers read out loud
-    answer_feature_description: Learn how to pronounce sounds with built-in recordings.
-    kids_feature_title: Safe for kids
-    kids_feature_description: Built with privacy in mind. No data is ever collected by the app.
-    illustration_title: Hand-drawn illustrations
-    illustration_description: Includes 15 different animals wearing classic hats of various countries. Tap on the animal and flag icons to see the animals that will be speaking!
-    languages_title: Supported languages
-    english: English
-    chinese: Chinese
-    french: French
-    german: German
-    italian: Italian
-    japanese: Japanese
-    korean: Korean
-    norwegian: Norwegian
-    russian: Russian
-    spanish: Spanish
-    swedish: Swedish
-    footer_promo: Start your language learning now!
-    footer_feedback: Feedback
-    footer_privacy: Privacy Policy
-    footer_contact: Contact us
-    home: Home
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###
