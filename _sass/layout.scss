@@ -1,19 +1,19 @@
-.imageWrapper {					// Sets the background image in the header area
+.imageWrapper {
 	height: 773px;
-	background: #2577DC;//radial-gradient(1000px circle at 80% -20%, #2AF598, #08AEEA 80%, #08AEEA 95%);
+	background: #2577DC;
 	background-position: top;
 	border-radius: 0px;
 }
 
-.imageWrapperShort {					// Sets the background image in the header area
-	height: 115px;
-	background: #2577DC;// radial-gradient(1000px circle at 80% -20%, #2AF598, #08AEEA 80%, #08AEEA 95%);
+.imageWrapperShort {
+	height: 120px;
+	background: #2577DC;
 	background-position: top;
 	border-radius: 0px;
 }
 
 .headerBackground {
-	height: 115px;
+	height: 120px;
 	background-color: transparent;
 }
 
@@ -124,6 +124,354 @@ p.privacyPolicyFooter {
 		"g g g g g g g g g g g g"
 }
 
+header {
+	grid-area: h;
+	display: flex;
+}
+
+// Navigation Links
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 115px;
+}
+
+.btn-default {
+	color: white;
+	box-shadow: none;
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+}
+
+.btn:focus {
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.btn:hover {
+	color: white;
+	background-color: rgba(#f2f2f2, 0.7);
+}
+
+.btn:active {
+	color: white;
+	background-color: rgba(#f2f2f2, 0.7);
+}
+
+.show > .btn-default.dropdown-toggle {
+	background-color: rgba(#f2f2f2, 0.7);
+}
+
+.headerMenu {
+	padding-top: 38px;
+}
+
+.dropdown-menu {
+	margin-right: 60px;
+}
+
+.dropdown-item {
+	font-size: 16px;
+}
+
+a.dropdown-item {
+	color: #333;
+}
+
+.logo {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	height: 115px;
+}
+
+.logo > p {
+	color: $header-title-color;
+	display: flex;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 1px;
+}
+
+.headerIcon {
+	width: 43px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+// App Title, Price, Description and Links
+
+.appInfo {
+	grid-area: i;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 100px;
+	align-content: flex-start;
+}
+
+.appIconShadow {
+	display: flex;
+	filter: $drop-shadow;
+}
+
+.appIconLarge {
+	width: 120px;
+	height: 120px;
+	-webkit-clip-path: url(#shape120);
+	clip-path: url(#shape120);
+}
+
+.appName {
+	color: $app-title-color;
+}
+
+.appPrice {
+	color: $app-price-color;
+	font-weight: normal;
+	margin-top: 13px;
+}
+
+.appHeadlineContainer {
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.appHeadline {
+	color: $app-headline-color;
+}
+
+.downloadButtonsContainer {
+	display: inline-block;
+	margin-top: 42px;
+	filter: $drop-shadow;
+}
+
+.playStore {
+	height: 75px;
+}
+
+
+.appStore {
+	margin-right: 24px;
+	height: 75px;
+}
+
+
+// iPhone Device Preview
+
+.iphonePreview {
+	grid-area: p;
+	margin-top: 20px;
+	position: relative;
+	float: right;
+}
+
+.iphoneImage {
+	width: 600px;
+	height: 538px;
+}
+
+.handTapContainer {
+	position: absolute;
+	left: 85px;
+	top: 350px;
+	width: 51px;
+	height: auto;
+	cursor: pointer;
+}
+
+.videoContainer {
+	width: 200px;
+	height: 433px;
+	-webkit-clip-path: url(#screenMask);
+	clip-path: url(#screenMask);
+	margin-left: 26px;
+	margin-top: 23px;
+}
+
+.videoContainer > video {
+	width: 200px;
+	height: 433px;
+}
+
+// Features
+.features {
+	background: #F8F8F8;
+}
+
+.featureTextContainer {
+	grid-area: d;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	color: rgb(41, 24, 47);
+}
+.featureHeadlineContainer {
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.featureDescriptionContainer {
+	font-size: 2.0rem;
+    font-weight: normal;
+    width: 80%;
+	align-items: flex-start;
+	margin-top: 20px;
+    flex: 0 1 auto;
+	line-height: 1.5;
+}
+
+.featureDescription {
+	color: rgb(41, 24, 47);
+}
+
+.featureImageContainer {
+	grid-area: s;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	position: relative;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Download container
+
+.downloadContainer {
+	width: 100%;
+	height: 420px;
+	background-color: #7E1D7E;
+}
+
+.downloadTextContainer {
+	display: block;
+	line-height: 1.5;
+	width: 100%;
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 10px;
+}
+.downloadText {
+	color: #ffff;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+.centeredButtonsContainer {
+	margin-top: 12px;
+	width: 100%;
+	padding-bottom: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Footer
+footer {
+	display: grid;
+	margin: auto;
+	max-width: $content-width;
+	padding-left: 15px;
+	padding-right: 15px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 115px 376px auto;
+	grid-column-gap: 30px;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"l l l l l l f f f f f f"
+		"g g g g g g g g g g g g"
+}
+
+.footerIcons {
+	grid-area: l;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.footerLinksContainer {
+	grid-area: f;
+	width: 100%;
+	padding-top: 15px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.footerBottomContainer {
+	grid-area: g;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.footerLinksContainer > p {
+	font-size: 0.8em;
+	color: $footer-text-color;
+	text-align: right;
+}
+
+.footerLinksContainer > p > a {
+	color: $footer-text-color;
+}
+
+.footerLinksContainer > p > a:hover {
+	text-decoration: underline; 
+}
+
+.footerDivider {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.copyrightText {
+	font-size: 1.5rem;
+	color: #666666;
+	display: block;
+	line-height: 1.5;
+	width: 100%;
+	text-align: right;
+	padding-top: 0px;
+	padding-bottom: 53px;
+}
+
+.hidden {
+	display: none;
+}
+
+.iconBack {
+	color: $feature-icons-background-color;
+}
+
+.iconTop {
+	color: $feature-icons-foreground-color;
+}
+
+.socialIconBack {
+	color: $social-icons-background-color;
+}
+
+.socialIconTop {
+	color: $social-icons-foreground-color;
+}
+
+
 @media only screen and (max-width: 1070px) {
 
 	.container {					// Set up the container for the site content
@@ -211,79 +559,6 @@ p.privacyPolicyFooter {
 	}
 }
 
-header {
-	grid-area: h;
-	display: flex;
-}
-
-// Navigation Links
-nav {
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 115px;
-}
-
-.btn-default {
-	color: white;
-	box-shadow: none;
-	background-color: transparent;
-	border: none;
-	font-size: 16px;
-}
-
-.btn:focus {
-	box-shadow: none;
-	background-color: transparent;
-}
-
-.btn:hover {
-	color: white;
-	background-color: rgba(#f2f2f2, 0.7);
-}
-
-.btn:active {
-	color: white;
-	background-color: rgba(#f2f2f2, 0.7);
-}
-
-.show > .btn-default.dropdown-toggle {
-	background-color: rgba(#f2f2f2, 0.7);
-}
-
-.headerMenu {
-	padding-top: 38px;
-}
-
-.dropdown-menu {
-	margin-right: 60px;
-}
-
-.dropdown-item {
-	font-size: 16px;
-}
-
-a.dropdown-item {
-	color: #333;
-}
-
-.logo {
-	display: flex;
-	width: 100%;
-	justify-content: flex-start;
-	align-items: center;
-	height: 115px;
-}
-
-.logo > p {
-	color: $header-title-color;
-	display: flex;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 1px;
-}
-
 @media only screen and (max-width: 528px) {
 
 	.logo > p {
@@ -295,22 +570,6 @@ a.dropdown-item {
 	}
 } 
 
-.headerIcon {
-	width: 43px;
-	height: 50px;
-	margin-right: 15px;
-}
-
-// App Title, Price, Description and Links
-
-.appInfo {
-	grid-area: i;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 100px;
-	align-content: flex-start;
-}
-
 @media only screen and (max-width: 992px) {
 
 	.appInfo {
@@ -319,41 +578,6 @@ a.dropdown-item {
 	}
 
 } 
-
-.appIconShadow {
-	display: flex;
-	filter: $drop-shadow;
-}
-
-.appIconLarge {
-	width: 120px;
-	height: 120px;
-	-webkit-clip-path: url(#shape120);
-	clip-path: url(#shape120);
-}
-
-.appName {
-	color: $app-title-color;
-}
-
-.appPrice {
-	color: $app-price-color;
-	font-weight: normal;
-	margin-top: 13px;
-}
-
-.appHeadlineContainer {
-	display: flex;
-	flex: 0 1 auto;
-	flex-direction: column;
-	align-items: start;
-	justify-content: center;
-	margin-top: 80px;
-}
-
-.appHeadline {
-	color: $app-headline-color;
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -381,11 +605,6 @@ a.dropdown-item {
 	
 } 
 
-.downloadButtonsContainer {
-	display: inline-block;
-	margin-top: 42px;
-	filter: $drop-shadow;
-}
 
 @media only screen and (max-width: 992px) {
 
@@ -395,15 +614,6 @@ a.dropdown-item {
 	
 } 
 
-.playStore {
-	height: 75px;
-}
-
-
-.appStore {
-	margin-right: 24px;
-	height: 75px;
-}
 
 @media only screen and (max-width: 992px) {
 
@@ -423,44 +633,48 @@ a.dropdown-item {
 	
 } 
 
-
-
-// iPhone Device Preview
-
-.iphonePreview {
-	grid-area: p;
-	margin-top: 20px;
-	position: relative;
-	float: right;
+@media only screen and (max-width: 1070px) {
 }
 
-.iphoneImage {
-	width: 600px;
-	height: 538px;
+@media only screen and (max-width: 992px) {
+
 }
 
-.handTapContainer {
-	position: absolute;
-	left: 85px;
-	top: 350px;
-	width: 51px;
-	height: auto;
-	cursor: pointer;
+@media only screen and (max-width: 568px) {
+
 }
 
-.videoContainer {
-	width: 200px;
-	height: 433px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+@media only screen and (max-width: 992px) {
+
+	.illustrationMainContainer {
+		margin-top: 15px;
+		justify-content: center;
+		padding-bottom: 0px;
+	}
+
+	.illustrationMainImage {
+		height: 150px;
+	}	
+
+	.illustrationMainWrapper {
+		width: 159px;	
+		height: 150px;
+		margin-left: 0px;
+		margin-right: 10px;
+		position: relative;
+	}
 }
 
-.videoContainer > video {
-	width: 200px;
-	height: 433px;
+@media only screen and (max-width: 568px) {
+	.illustrationCountries {
+		height: 217px;
+		width: 105px;
+		padding-left: 0px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
 }
+
 
 @media only screen and (max-width: 1070px) {
 
@@ -536,208 +750,6 @@ a.dropdown-item {
 } 
 
 
-// Features
-.features {
-	background: #F8F8F8;
-}
-
-.featureTextContainer {
-	grid-area: d;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	color: rgb(41, 24, 47);
-}
-.featureHeadlineContainer {
-	display: flex;
-	flex: 0 1 auto;
-	flex-direction: column;
-	align-items: start;
-	justify-content: center;
-	margin-top: 30px;
-}
-
-.featureDescriptionContainer {
-	font-size: 2.0rem;
-    font-weight: normal;
-    width: 80%;
-	align-items: flex-start;
-	margin-top: 20px;
-    flex: 0 1 auto;
-	line-height: 1.5;
-}
-
-.featureDescription {
-	color: rgb(41, 24, 47);
-}
-
-.featureImageContainer {
-	grid-area: s;
-	margin-top: 80px;
-	margin-bottom: 80px;
-	position: relative;
-	flex: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@media only screen and (max-width: 1070px) {
-}
-
-@media only screen and (max-width: 992px) {
-
-}
-
-@media only screen and (max-width: 568px) {
-
-}
-
-@media only screen and (max-width: 992px) {
-
-	.illustrationMainContainer {
-		margin-top: 15px;
-		justify-content: center;
-		padding-bottom: 0px;
-	}
-
-	.illustrationMainImage {
-		height: 150px;
-	}	
-
-	.illustrationMainWrapper {
-		width: 159px;	
-		height: 150px;
-		margin-left: 0px;
-		margin-right: 10px;
-		position: relative;
-	}
-}
-
-@media only screen and (max-width: 568px) {
-	.illustrationCountries {
-		height: 217px;
-		width: 105px;
-		padding-left: 0px;
-		margin-right: 10px;
-		margin-top: 10px;
-	}
-}
-
-// Download container
-
-.downloadContainer {
-	width: 100%;
-	height: 420px;
-	background-color: #7E1D7E;
-}
-
-.downloadTextContainer {
-	display: block;
-	line-height: 1.5;
-	width: 100%;
-	text-align: center;
-	padding-top: 150px;
-	padding-bottom: 10px;
-}
-.downloadText {
-	color: #ffff;
-	font-weight: bold;
-	font-size: 1.8em;
-}
-
-.centeredButtonsContainer {
-	margin-top: 12px;
-	width: 100%;
-	padding-bottom: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-// Footer
-footer {
-	display: grid;
-	margin: auto;
-	max-width: $content-width;
-	padding-left: 15px;
-	padding-right: 15px;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 115px 376px auto;
-	grid-column-gap: 30px;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	grid-template-areas: 
-		"l l l l l l f f f f f f"
-		"g g g g g g g g g g g g"
-}
-
-.footerText {
-	color: $footer-text-color;
-	display: block;
-	line-height: 1.5;
-	width: 100%;
-	text-align: center;
-	padding-top: 0px;
-	padding-bottom: 10px;
-}
-
-.footerIcons {
-	grid-area: l;
-	padding-top: 40px;
-	padding-bottom: 30px;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-
-.footerLinksContainer {
-	grid-area: f;
-	width: 100%;
-	padding-top: 40px;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-}
-
-.footerBottomContainer {
-	grid-area: g;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-}
-
-.footerLinksContainer > p {
-	font-size: 0.8em;
-	color: $footer-text-color;
-	text-align: right;
-}
-
-.footerLinksContainer > p > a {
-	color: $footer-text-color;
-}
-
-.footerLinksContainer > p > a:hover {
-	text-decoration: underline; 
-}
-
-
-.footerDivider {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.copyrightText {
-	font-size: 1.5rem;
-	color: $footer-text-color;
-	display: block;
-	line-height: 1.5;
-	width: 100%;
-	text-align: right;
-	padding-top: 0px;
-	padding-bottom: 53px;
-}
-
 @media only screen and (max-width: 992px) {
 
 	.footerAppStore {
@@ -763,20 +775,8 @@ footer {
 } 
 
 @media only screen and (max-width: 992px) {
-	
-	.footerText {
-		color: $footer-text-color;
-		display: block;
-		line-height: 1.5;
-		width: 100%;
-		text-align: center;
-	}
-	
+
 	.footerIcons {
 		display: flex;
 	}	
 } 
-
-.hidden {
-	display: none;
-}

@@ -16,7 +16,7 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Vivian Qu                                
 your_link                                 : https://vivqu.com                     
 your_city                                 :                          
-email_address                             : hello@worldanimalsapp.com
+email_address                             : hello@argrimoire.com
 facebook_username                         :                                           
 instagram_username                        : 
 twitter_username                          : vivqu
@@ -71,10 +71,10 @@ feature_text_color                        : "#666666"
 feature_icons_foreground_color            : "#1d63ea"
 feature_icons_background_color            : "#e6e6e6"
 
-social_icons_foreground_color             : "#666666"
-social_icons_background_color             : "#e6e6e6"
+social_icons_foreground_color             : "#ffff"
+social_icons_background_color             : "#2577DC"
 
-footer_text_color                         : "#666666"
+footer_text_color                         : "#2577DC"
 
 ####################################################
 ###                 Translations                 ###
