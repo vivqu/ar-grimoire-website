@@ -1,4 +1,5 @@
 page_title                                : AR Grimoire                              # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+app_description                           : The first augmented spellbook for D&D 5e.
 
 # App Info
 ios_app_id                                : 1483112641                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).

@@ -7,6 +7,18 @@
 
 	<title class="pageTitle">{{ site.page_title }}</title>
 	<meta name="description" content="{{ site.app_description }}">
+	<meta name="application-name" content="AR Grimoire" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:image" content="{{ site.url }}/assets/ar-grimoire-banner.png" />
+	<meta property="og:image:width" content="150" />
+	<meta property="og:image:height" content="150" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="twitter:creator" content="@vivqu" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@vivqu" />
+	<meta name="twitter:text:title" content="{{ page.title }}" />
+	<meta name="twitter:description" content="{{ site.app_description }}" />
 
 	<link rel="shortcut icon" href="{{ site.app_icon }}">
 	<link rel="stylesheet" href="{{'/node_modules/bootstrap/dist/css/bootstrap.min.css' | prepend: site.baseurl}}">
